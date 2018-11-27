@@ -11,12 +11,17 @@
 #include <a_samp>
 #include <zcmd>
 
+
 //DEFINES
-#define COLOR_BLANCO -1
-#define COLOR_NEGRO 0x000000FF
+	//COLORES
+#define COLOR_BLANCO   -1
+#define COLOR_NEGRO    0x000000FF
 #define COLOR_AMARILLO 0xFFFF00FF
-#define COLOR_AZUL 0x0000FFFF
-#define COLOR_ROJO 0xFF0000FF
+#define COLOR_AZUL     0x0000FFFF
+#define COLOR_ROJO     0xFF0000FF
+	//DIALOGOS
+#define MENSAJE_DIALOGO   1
+#define MENSAJE_INTRODUCE 2
 
 #if defined FILTERSCRIPT
 
@@ -73,6 +78,10 @@ public OnPlayerRequestClass(playerid, classid)
 
 public OnPlayerConnect(playerid)
 {
+	//DIALOGS
+	ShowPlayerDialog(playerid, MENSAJE_DIALOGO, DIALOG_STYLE_MSGBOX, "{FFFF00}ROL-{0000FF}COLO{FF0000}MBIA{000000}.", "Selcciona tu sexo." , "Hombre", "Mujer");
+	
+	ShowPlayerDialog(playerid, MENSAJE_INTRODUCE, DIALOG_STYLE_INPUT, "{FFFF00}ROL-{0000FF}COLO{FF0000}MBIA{000000}.", "Crea tu nombre para registrate.", "Guardar", "Cancelar");
 	//AVISO DE JUGADOR CONECTADO
 	SendClientMessageToAll(COLOR_BLANCO, "Un Jugador se ha conectado.");
 	return 1;
