@@ -1,0 +1,34 @@
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[01:38:07] filterscripts = ""  (string)
+[01:38:07] 
+[01:38:07] Server Plugins
+[01:38:07] --------------
+[01:38:07]  Loaded 0 plugins.
+
+[01:38:07] 
+[01:38:07] Filterscripts
+[01:38:07] ---------------
+[01:38:07]   Loaded 0 filterscripts.
+
+[01:38:07] 
+----------------------------------
+[01:38:07]  Rol-Colombia 
+[01:38:07]  Creado por: David Párraga 
+[01:38:07]  Versión 0.1.0 
+[01:38:07] ----------------------------------
+
+[01:38:07] Number of vehicle models: 0
+[01:38:58] [connection] 192.168.0.20:61959 requests connection cookie.
+[01:38:59] [connection] incoming connection: 192.168.0.20:61959 id: 0
+[01:38:59] [join] David_Parraga has joined the server (0:192.168.0.20)
+[01:39:20] [part] David_Parraga has left the server (0:1)
+Console input: exit
+[01:39:36] --- Server Shutting Down.
