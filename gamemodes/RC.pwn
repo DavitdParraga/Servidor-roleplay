@@ -1,8 +1,22 @@
-// This is a comment
+/*  
+	Servidor Role-Play 
+	Rol Colombia 
+	David Parraga
+*/
 // uncomment the line below if you want to write a filterscript
 //#define FILTERSCRIPT
 
+
+//INCLUDES
 #include <a_samp>
+#include <zcmd>
+
+//DEFINES
+#define COLOR_BLANCO -1
+#define COLOR_NEGRO 0x000000FF
+#define COLOR_AMARILLO 0xFFFF00FF
+#define COLOR_AZUL 0x0000FFFF
+#define COLOR_ROJO 0xFF0000FF
 
 #if defined FILTERSCRIPT
 
@@ -25,8 +39,8 @@ main()
 {
 	print("\n----------------------------------");
 	print(" Rol-Colombia ");
-	print(" Creado por: David Párraga ");
-	print(" Versión 0.1.0 ");
+	print(" Creado por: David Parraga ");
+	print(" Version 0.1.0 ");
 	print("----------------------------------\n");
 }
 
@@ -50,11 +64,17 @@ public OnPlayerRequestClass(playerid, classid)
 	SetPlayerPos(playerid, 1958.3783, 1343.1572, 15.3746);
 	SetPlayerCameraPos(playerid, 1958.3783, 1343.1572, 15.3746);
 	SetPlayerCameraLookAt(playerid, 1958.3783, 1343.1572, 15.3746);
+	//BIENVENIDA TEXTO MULTICOLOR
+	SendClientMessage(playerid, COLOR_BLANCO, "Bienvenido a: {FFFF00}ROL-{0000FF}COLO{FF0000}MBIA{000000}.");
+	SendClientMessage(playerid, COLOR_BLANCO, "Vive la experiencia {FFFF00}TRI{0000FF}COL{FF0000}OR{000000}.");
+	SendClientMessage(playerid, COLOR_BLANCO, "Escoge tu apariencia.");
 	return 1;
 }
 
 public OnPlayerConnect(playerid)
 {
+	//AVISO DE JUGADOR CONECTADO
+	SendClientMessageToAll(COLOR_BLANCO, "Un Jugador se ha conectado.");
 	return 1;
 }
 
